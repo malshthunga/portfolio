@@ -1,4 +1,4 @@
-**Flappy Bird Reinforcement Learning**
+![image](https://github.com/user-attachments/assets/b715399e-9168-4dbc-8a5e-4086c2df2a29)**Flappy Bird Reinforcement Learning**
 ![image](https://github.com/user-attachments/assets/66348b92-b118-4e8a-a100-2045cc58e317)
 
 ![image](https://github.com/user-attachments/assets/2fd4cf18-f89f-40c4-9ca1-3cc38038cda9)
@@ -57,4 +57,20 @@ You may add additional variables and helper functions as you need, but make sure
 You may want to clear the agent's memory D periodically, this is because we directly compute qt+1 before storing them in D. Those historical q values may become obsolete quickly as the network updates.
 We assume some of you do not know how to train a deep learning neural network, if so you can use the MLP network defined in pytorch_mlp.py to implement the Q-value network. The MLP network is an imitation of MLPRegressor from scikit-learn. As MLPRegressor does not allow multiple regression outputs, we provide our own implementation to you to reduce the overall difficulty of the assignment. The MLPRegression has an example usage written at the end of the file. If you want to edit the MLP model, please feel free to do so, but please make sure the model file is not too large. The default network structure (200, 500, 100) is sufficiently large to handle the Flappy bird game and the saved model size is <1 MB.
 ![image](https://github.com/user-attachments/assets/b99622b1-c2f5-4aa0-bac9-2bbe281762c6)
+
+**Game state information (st or st+1)**
+The game emulator communicates to your agent by sending a state dictionary. The information is assembled in the get_state(...) function located in console.py. Here, we list the state enclosed information.
+
+![image](https://github.com/user-attachments/assets/0c8e9bab-4b58-4e96-bb3b-56527cd750ba)
+![image](https://github.com/user-attachments/assets/1ae9ce06-5b80-4c80-a82e-a393ff4bcae5)
+![image](https://github.com/user-attachments/assets/143f06eb-d53b-43c6-9000-e12ee1e5cfa7)
+![image](https://github.com/user-attachments/assets/bb61ddbc-a43d-4154-8b7a-b6f781b9fa49)
+![image](https://github.com/user-attachments/assets/10748e71-6676-4a1f-890d-b68c1481d8c1)
+![image](https://github.com/user-attachments/assets/93de55eb-5926-4f5a-b224-ea0f61584a68)
+![image](https://github.com/user-attachments/assets/0d20e005-ccf9-4205-a25b-a46c80e1c9dd)
+
+
+
+
+
 
